@@ -1,0 +1,9 @@
+{
+	"id": "dnjG9zwlZIg9kVN",
+	"json": "{\"id\":\"dnjG9zwlZIg9kVN\",\"url\":\"https://www.concur.co.in/resource-center/brochures/fending-off-fraud\",\"uniqueKey\":\"https://www.concur.co.in/resource-center/brochures/fending-off-fraud\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
+	"method": "GET",
+	"orderNo": 1709394282130,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/resource-center/brochures/fending-off-fraud",
+	"url": "https://www.concur.co.in/resource-center/brochures/fending-off-fraud"
+}

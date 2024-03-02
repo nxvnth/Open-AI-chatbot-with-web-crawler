@@ -1,0 +1,9 @@
+{
+	"id": "8PugUn37PebvSvU",
+	"json": "{\"id\":\"8PugUn37PebvSvU\",\"url\":\"https://www.concur.co.in/partners\",\"loadedUrl\":\"https://www.concur.co.in/partners\",\"uniqueKey\":\"https://www.concur.co.in/partners\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:44:59.258Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/partners",
+	"url": "https://www.concur.co.in/partners"
+}

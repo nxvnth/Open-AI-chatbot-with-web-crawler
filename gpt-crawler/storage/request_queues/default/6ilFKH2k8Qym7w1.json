@@ -1,0 +1,9 @@
+{
+	"id": "6ilFKH2k8Qym7w1",
+	"json": "{\"id\":\"6ilFKH2k8Qym7w1\",\"url\":\"https://www.concur.co.in/visibility-and-compliance\",\"loadedUrl\":\"https://www.concur.co.in/visibility-and-compliance\",\"uniqueKey\":\"https://www.concur.co.in/visibility-and-compliance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:44:35.514Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/visibility-and-compliance",
+	"url": "https://www.concur.co.in/visibility-and-compliance"
+}

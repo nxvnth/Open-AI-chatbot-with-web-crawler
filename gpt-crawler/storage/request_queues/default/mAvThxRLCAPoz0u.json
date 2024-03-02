@@ -1,0 +1,9 @@
+{
+	"id": "mAvThxRLCAPoz0u",
+	"json": "{\"id\":\"mAvThxRLCAPoz0u\",\"url\":\"https://www.concur.co.in/resources/sap-concur-drive-brochure\",\"loadedUrl\":\"https://www.concur.co.in/resource-center/brochures/sap-concur-drive-brochure\",\"uniqueKey\":\"https://www.concur.co.in/resources/sap-concur-drive-brochure\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:45:05.100Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/resources/sap-concur-drive-brochure",
+	"url": "https://www.concur.co.in/resources/sap-concur-drive-brochure"
+}

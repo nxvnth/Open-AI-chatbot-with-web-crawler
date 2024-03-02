@@ -1,0 +1,9 @@
+{
+	"id": "RIEhPtghV1FmihP",
+	"json": "{\"id\":\"RIEhPtghV1FmihP\",\"url\":\"https://www.concur.co.in/casestudy/vmware\",\"uniqueKey\":\"https://www.concur.co.in/casestudy/vmware\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
+	"method": "GET",
+	"orderNo": 1709394269093,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/casestudy/vmware",
+	"url": "https://www.concur.co.in/casestudy/vmware"
+}

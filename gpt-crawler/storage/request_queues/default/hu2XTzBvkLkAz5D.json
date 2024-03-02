@@ -1,0 +1,9 @@
+{
+	"id": "hu2XTzBvkLkAz5D",
+	"json": "{\"id\":\"hu2XTzBvkLkAz5D\",\"url\":\"https://www.concur.co.in/resource-center/brochures/top-tips-for-improving-vat-compliance\",\"uniqueKey\":\"https://www.concur.co.in/resource-center/brochures/top-tips-for-improving-vat-compliance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
+	"method": "GET",
+	"orderNo": 1709394238349,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/resource-center/brochures/top-tips-for-improving-vat-compliance",
+	"url": "https://www.concur.co.in/resource-center/brochures/top-tips-for-improving-vat-compliance"
+}
