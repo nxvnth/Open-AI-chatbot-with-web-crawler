@@ -1,0 +1,9 @@
+{
+	"id": "6oH7REuIuSDNptT",
+	"json": "{\"id\":\"6oH7REuIuSDNptT\",\"url\":\"https://www.concur.co.in/resource-center/reports/why-sap-concur-and-cost-doing-nothing\",\"uniqueKey\":\"https://www.concur.co.in/resource-center/reports/why-sap-concur-and-cost-doing-nothing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
+	"method": "GET",
+	"orderNo": 1709394265111,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/resource-center/reports/why-sap-concur-and-cost-doing-nothing",
+	"url": "https://www.concur.co.in/resource-center/reports/why-sap-concur-and-cost-doing-nothing"
+}

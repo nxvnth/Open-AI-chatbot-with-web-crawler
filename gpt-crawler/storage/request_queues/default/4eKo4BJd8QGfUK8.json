@@ -1,0 +1,9 @@
+{
+	"id": "4eKo4BJd8QGfUK8",
+	"json": "{\"id\":\"4eKo4BJd8QGfUK8\",\"url\":\"https://www.concur.co.in/resource-center/brochures/concur-tax-assurance-vatbox\",\"uniqueKey\":\"https://www.concur.co.in/resource-center/brochures/concur-tax-assurance-vatbox\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
+	"method": "GET",
+	"orderNo": 1709394238347,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/resource-center/brochures/concur-tax-assurance-vatbox",
+	"url": "https://www.concur.co.in/resource-center/brochures/concur-tax-assurance-vatbox"
+}

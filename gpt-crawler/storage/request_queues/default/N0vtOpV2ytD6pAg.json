@@ -1,0 +1,9 @@
+{
+	"id": "N0vtOpV2ytD6pAg",
+	"json": "{\"id\":\"N0vtOpV2ytD6pAg\",\"url\":\"https://www.concur.co.in/business-intelligence\",\"loadedUrl\":\"https://www.concur.co.in/business-intelligence\",\"uniqueKey\":\"https://www.concur.co.in/business-intelligence\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:44:13.553Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/business-intelligence",
+	"url": "https://www.concur.co.in/business-intelligence"
+}

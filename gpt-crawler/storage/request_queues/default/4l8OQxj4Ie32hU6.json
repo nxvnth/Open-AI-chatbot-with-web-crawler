@@ -1,0 +1,9 @@
+{
+	"id": "4l8OQxj4Ie32hU6",
+	"json": "{\"id\":\"4l8OQxj4Ie32hU6\",\"url\":\"https://www.concur.co.in/retail-and-restaurant\",\"loadedUrl\":\"https://www.concur.co.in/retail-and-restaurant\",\"uniqueKey\":\"https://www.concur.co.in/retail-and-restaurant\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:44:44.334Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/retail-and-restaurant",
+	"url": "https://www.concur.co.in/retail-and-restaurant"
+}

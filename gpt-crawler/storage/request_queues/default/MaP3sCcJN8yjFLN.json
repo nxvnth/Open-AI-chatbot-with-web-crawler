@@ -1,0 +1,9 @@
+{
+	"id": "MaP3sCcJN8yjFLN",
+	"json": "{\"id\":\"MaP3sCcJN8yjFLN\",\"url\":\"https://www.concur.co.in/resource-center/whitepapers/global-travel-manager-report-2022\",\"uniqueKey\":\"https://www.concur.co.in/resource-center/whitepapers/global-travel-manager-report-2022\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
+	"method": "GET",
+	"orderNo": 1709394291209,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/resource-center/whitepapers/global-travel-manager-report-2022",
+	"url": "https://www.concur.co.in/resource-center/whitepapers/global-travel-manager-report-2022"
+}

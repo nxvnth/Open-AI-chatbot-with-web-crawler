@@ -1,0 +1,9 @@
+{
+	"id": "j9xCrbV3XYq9TFO",
+	"json": "{\"id\":\"j9xCrbV3XYq9TFO\",\"url\":\"https://www.concur.co.in/partners/private-equity-partners\",\"uniqueKey\":\"https://www.concur.co.in/partners/private-equity-partners\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
+	"method": "GET",
+	"orderNo": 1709394299237,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/partners/private-equity-partners",
+	"url": "https://www.concur.co.in/partners/private-equity-partners"
+}

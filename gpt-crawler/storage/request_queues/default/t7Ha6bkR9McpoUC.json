@@ -1,0 +1,9 @@
+{
+	"id": "t7Ha6bkR9McpoUC",
+	"json": "{\"id\":\"t7Ha6bkR9McpoUC\",\"url\":\"https://www.concur.co.in/casestudy/cisco-systems\",\"uniqueKey\":\"https://www.concur.co.in/casestudy/cisco-systems\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
+	"method": "GET",
+	"orderNo": 1709394289200,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/casestudy/cisco-systems",
+	"url": "https://www.concur.co.in/casestudy/cisco-systems"
+}

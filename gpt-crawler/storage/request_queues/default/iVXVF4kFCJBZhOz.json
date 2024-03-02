@@ -1,0 +1,9 @@
+{
+	"id": "iVXVF4kFCJBZhOz",
+	"json": "{\"id\":\"iVXVF4kFCJBZhOz\",\"url\":\"https://www.concur.co.in/partners/global-alliance-partners\",\"uniqueKey\":\"https://www.concur.co.in/partners/global-alliance-partners\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
+	"method": "GET",
+	"orderNo": 1709394299240,
+	"retryCount": 0,
+	"uniqueKey": "https://www.concur.co.in/partners/global-alliance-partners",
+	"url": "https://www.concur.co.in/partners/global-alliance-partners"
+}
