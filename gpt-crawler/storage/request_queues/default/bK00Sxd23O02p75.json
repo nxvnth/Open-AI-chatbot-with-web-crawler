@@ -1,9 +1,0 @@
-{
-	"id": "bK00Sxd23O02p75",
-	"json": "{\"id\":\"bK00Sxd23O02p75\",\"url\":\"https://www.concur.co.in/blog\",\"loadedUrl\":\"https://www.concur.co.in/blog\",\"uniqueKey\":\"https://www.concur.co.in/blog\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:44:59.576Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/blog",
-	"url": "https://www.concur.co.in/blog"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "hgdXWBksgTHV6uv",
-	"json": "{\"id\":\"hgdXWBksgTHV6uv\",\"url\":\"https://www.concur.co.in/casestudy/lumenis-case-study\",\"uniqueKey\":\"https://www.concur.co.in/casestudy/lumenis-case-study\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
-	"method": "GET",
-	"orderNo": 1709394243055,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/casestudy/lumenis-case-study",
-	"url": "https://www.concur.co.in/casestudy/lumenis-case-study"
-}

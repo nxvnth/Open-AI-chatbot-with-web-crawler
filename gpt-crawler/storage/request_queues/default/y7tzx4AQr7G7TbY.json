@@ -1,9 +1,0 @@
-{
-	"id": "y7tzx4AQr7G7TbY",
-	"json": "{\"id\":\"y7tzx4AQr7G7TbY\",\"url\":\"https://www.concur.co.in/manufacturing\",\"loadedUrl\":\"https://www.concur.co.in/manufacturing\",\"uniqueKey\":\"https://www.concur.co.in/manufacturing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:44:43.600Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/manufacturing",
-	"url": "https://www.concur.co.in/manufacturing"
-}

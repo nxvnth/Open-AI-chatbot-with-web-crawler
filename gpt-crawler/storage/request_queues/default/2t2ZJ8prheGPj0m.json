@@ -1,9 +1,0 @@
-{
-	"id": "2t2ZJ8prheGPj0m",
-	"json": "{\"id\":\"2t2ZJ8prheGPj0m\",\"url\":\"https://www.concur.co.in/healthcare\",\"loadedUrl\":\"https://www.concur.co.in/healthcare\",\"uniqueKey\":\"https://www.concur.co.in/healthcare\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:44:41.762Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/healthcare",
-	"url": "https://www.concur.co.in/healthcare"
-}

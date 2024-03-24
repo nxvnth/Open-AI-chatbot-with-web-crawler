@@ -1,9 +1,0 @@
-{
-	"id": "SBZaTNzXrgoYkOK",
-	"json": "{\"id\":\"SBZaTNzXrgoYkOK\",\"url\":\"https://www.concur.co.in/business-travel-management\",\"loadedUrl\":\"https://www.concur.co.in/business-travel-management\",\"uniqueKey\":\"https://www.concur.co.in/business-travel-management\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:44:51.226Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/business-travel-management",
-	"url": "https://www.concur.co.in/business-travel-management"
-}

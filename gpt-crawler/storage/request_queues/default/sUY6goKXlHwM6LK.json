@@ -1,9 +1,0 @@
-{
-	"id": "sUY6goKXlHwM6LK",
-	"json": "{\"id\":\"sUY6goKXlHwM6LK\",\"url\":\"https://www.concur.co.in/casestudy/hcl-case-study\",\"uniqueKey\":\"https://www.concur.co.in/casestudy/hcl-case-study\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
-	"method": "GET",
-	"orderNo": 1709394240926,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/casestudy/hcl-case-study",
-	"url": "https://www.concur.co.in/casestudy/hcl-case-study"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "iz3LZvP5fWn255E",
-	"json": "{\"id\":\"iz3LZvP5fWn255E\",\"url\":\"https://www.concur.co.in/casestudy/postnl-0\",\"uniqueKey\":\"https://www.concur.co.in/casestudy/postnl-0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
-	"method": "GET",
-	"orderNo": 1709394289176,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/casestudy/postnl-0",
-	"url": "https://www.concur.co.in/casestudy/postnl-0"
-}
