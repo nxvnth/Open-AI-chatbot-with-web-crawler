@@ -1,9 +1,0 @@
-{
-	"id": "WxoYSWYqSp5fuc7",
-	"json": "{\"id\":\"WxoYSWYqSp5fuc7\",\"url\":\"https://www.concur.co.in/resource-center/reports/2022-oxford-economics-employee-experience-global-report\",\"uniqueKey\":\"https://www.concur.co.in/resource-center/reports/2022-oxford-economics-employee-experience-global-report\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
-	"method": "GET",
-	"orderNo": 1709394272332,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/resource-center/reports/2022-oxford-economics-employee-experience-global-report",
-	"url": "https://www.concur.co.in/resource-center/reports/2022-oxford-economics-employee-experience-global-report"
-}

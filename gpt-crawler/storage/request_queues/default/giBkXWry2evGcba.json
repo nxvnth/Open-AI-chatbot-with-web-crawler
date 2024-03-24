@@ -1,9 +1,0 @@
-{
-	"id": "giBkXWry2evGcba",
-	"json": "{\"id\":\"giBkXWry2evGcba\",\"url\":\"https://www.concur.co.in/integrations\",\"loadedUrl\":\"https://www.concur.co.in/integrations\",\"uniqueKey\":\"https://www.concur.co.in/integrations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:44:19.564Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/integrations",
-	"url": "https://www.concur.co.in/integrations"
-}

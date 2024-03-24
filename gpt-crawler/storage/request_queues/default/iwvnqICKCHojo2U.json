@@ -1,9 +1,0 @@
-{
-	"id": "iwvnqICKCHojo2U",
-	"json": "{\"id\":\"iwvnqICKCHojo2U\",\"url\":\"https://www.concur.co.in/casestudy/beumer-case-study\",\"uniqueKey\":\"https://www.concur.co.in/casestudy/beumer-case-study\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
-	"method": "GET",
-	"orderNo": 1709394243046,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/casestudy/beumer-case-study",
-	"url": "https://www.concur.co.in/casestudy/beumer-case-study"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "vh7OcqpbLulpTF2",
-	"json": "{\"id\":\"vh7OcqpbLulpTF2\",\"url\":\"https://www.concur.co.in/resource-center/reports/2021-spend-insights-report\",\"uniqueKey\":\"https://www.concur.co.in/resource-center/reports/2021-spend-insights-report\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
-	"method": "GET",
-	"orderNo": 1709394268289,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/resource-center/reports/2021-spend-insights-report",
-	"url": "https://www.concur.co.in/resource-center/reports/2021-spend-insights-report"
-}

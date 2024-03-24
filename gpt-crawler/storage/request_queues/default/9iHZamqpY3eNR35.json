@@ -1,9 +1,0 @@
-{
-	"id": "9iHZamqpY3eNR35",
-	"json": "{\"id\":\"9iHZamqpY3eNR35\",\"url\":\"https://www.concur.co.in/resource-center/whitepapers/global-business-traveler-report-2022\",\"uniqueKey\":\"https://www.concur.co.in/resource-center/whitepapers/global-business-traveler-report-2022\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
-	"method": "GET",
-	"orderNo": 1709394291216,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/resource-center/whitepapers/global-business-traveler-report-2022",
-	"url": "https://www.concur.co.in/resource-center/whitepapers/global-business-traveler-report-2022"
-}

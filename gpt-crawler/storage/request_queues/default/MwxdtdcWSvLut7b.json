@@ -1,9 +1,0 @@
-{
-	"id": "MwxdtdcWSvLut7b",
-	"json": "{\"id\":\"MwxdtdcWSvLut7b\",\"url\":\"https://www.concur.co.in/analytics\",\"loadedUrl\":\"https://www.concur.co.in/analytics\",\"uniqueKey\":\"https://www.concur.co.in/analytics\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:44:12.490Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/analytics",
-	"url": "https://www.concur.co.in/analytics"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "2XdTGKVPM8IA4b2",
-	"json": "{\"id\":\"2XdTGKVPM8IA4b2\",\"url\":\"https://www.concur.co.in/casestudy/standard-chartered-bank\",\"loadedUrl\":\"https://www.concur.co.in/casestudy/standard-chartered-bank\",\"uniqueKey\":\"https://www.concur.co.in/casestudy/standard-chartered-bank\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-03-02T15:45:08.219Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/casestudy/standard-chartered-bank",
-	"url": "https://www.concur.co.in/casestudy/standard-chartered-bank"
-}

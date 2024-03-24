@@ -1,9 +1,0 @@
-{
-	"id": "z2ZUgfdDx2XFTkF",
-	"json": "{\"id\":\"z2ZUgfdDx2XFTkF\",\"url\":\"https://www.concur.co.in/sites/default/files/brochures/bluesky_brochure.pdf\",\"uniqueKey\":\"https://www.concur.co.in/sites/default/files/brochures/bluesky_brochure.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false}}}",
-	"method": "GET",
-	"orderNo": 1709394276948,
-	"retryCount": 0,
-	"uniqueKey": "https://www.concur.co.in/sites/default/files/brochures/bluesky_brochure.pdf",
-	"url": "https://www.concur.co.in/sites/default/files/brochures/bluesky_brochure.pdf"
-}
