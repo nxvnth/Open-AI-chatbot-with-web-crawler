@@ -1,3 +1,4 @@
+
 import subprocess
 import os
 import json
@@ -24,7 +25,17 @@ def start_node_crawler(crawler_dir='gpt-crawler', output_file='output-1.json', e
     crawler_full_path = os.path.join(os.getcwd(), crawler_dir)
     
     result = subprocess.run([npm_path, 'start'], cwd=crawler_full_path, capture_output=True, text=True)
-    
+    # Run the flush.py script using the Python executable from the virtual environment
+    flush_script_path = os.path.join(crawler_full_path, 'flush.py')
+
+    flush_result = subprocess.run(['python', flush_script_path], capture_output=True, text=True)
+
+    if flush_result.returncode != 0:
+        error_message = flush_result.stderr
+        print(f"Error running flush.py: {error_message}")
+        raise Exception(f"flush.py failed with error: {error_message}")
+    else:
+        print("removed all cache files")
     if result.returncode != 0:
         error_message = result.stderr
         print(f"Error running crawler: {error_message}")
@@ -45,8 +56,9 @@ def get_vectorstore_from_json(json_file):
         chunks = text_splitter.split_text(cleaned_content)
         documents.extend([Document(chunk) for chunk in chunks])
 
-    vector_store = Chroma.from_documents(documents, OpenAIEmbeddings())
-
+    vector_store= Chroma.from_documents(documents,OpenAIEmbeddings(),persist_directory='vector_store')
+    
+    print("Vectors generated and saved to disk at:", 'vector_store')
     return vector_store
 
 def get_context_retriever_chain(vector_store):
@@ -90,22 +102,30 @@ def get_response(user_input, vector_store, chat_history):
 
 if __name__ == "__main__":
     print("Chat with websites")
-    hi = input("type hi to start")
-    
-    chat_history = [AIMessage(content="Hello, I am a bot. How can I help you?")]
+    hi = 1
     vector_store = None
-    
-    if hi:
-        # Start the crawler and get the path to the output JSON file
-        json_file_path = start_node_crawler()
-        vector_store = get_vectorstore_from_json(json_file_path)
-
-        while True:
-            user_query = input("Type your message here (or type 'exit' to quit): ")
-            if user_query == 'exit':
+    while hi in range(1,3):
+        hi = int(input("type 1 to start crawling or 2 to start chatbot: "))
+        if hi==1:
+            # Start the crawler and get the path to the output JSON file
+            json_file_path = start_node_crawler()
+            vector_store = get_vectorstore_from_json(json_file_path)
+            con = input("type y to continue to chatbot or n to exit: ") 
+            if con == 'y':
+                continue
+            else:
                 break
-            if user_query:
-                response = get_response(user_query, vector_store, chat_history)
-                chat_history.append(HumanMessage(content=user_query))
-                chat_history.append(AIMessage(content=response))
-                print(f"AI: {response}")
+
+
+        elif hi == 2:
+
+            chat_history = [AIMessage(content="Hello, I am a bot. How can I help you?")]
+            while True:
+                user_query = input("Type your message here (or type 'exit' to quit): ")
+                if user_query == 'exit':
+                    break
+                if user_query:
+                    response = get_response(user_query, vector_store, chat_history)
+                    chat_history.append(HumanMessage(content=user_query))
+                    chat_history.append(AIMessage(content=response))
+                    print(f"AI: {response}")
