@@ -3,7 +3,7 @@ import time
 import subprocess
 import os
 import json
-import openai
+import tempfile
 import codecs
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_community.document_loaders import WebBaseLoader
@@ -15,6 +15,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
+from werkzeug.utils import secure_filename
 
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
@@ -62,15 +63,14 @@ def get_vectorstore_from_json(json_file):
     attempt = 0
     max_attempts = 5  # Set a maximum number of attempts to avoid infinite loops
     success = False
-
+    vector_store = Chroma(collection_name='v_db',persist_directory='vector_store',embedding_function = OpenAIEmbeddings(openai_api_key=openai_api_key))
     while attempt < max_attempts and not success:
         
-            vector_store = Chroma.from_documents(
+            vector_store.add_documents(
                 documents,
-                OpenAIEmbeddings(
+                embedding_function=OpenAIEmbeddings(
                     openai_api_key=openai_api_key,
                     show_progress_bar=True,
-                    
                 ),
                 persist_directory='vector_store',
                 collection_name='v_db'
@@ -78,17 +78,17 @@ def get_vectorstore_from_json(json_file):
             vector_store.persist()
             print("Vectors generated and saved to disk at:", 'vector_store')
             success = True
-            return vector_store
+            return vector_store 
 
 
-def get_vectorstore_from_pdfs(directory_path='documents'):
+def get_vectorstore_from_pdfs(directory_path='uploaded_files'):
     """
     Extracts text from all PDF files in a directory, splits the texts into chunks, converts these into embeddings,
     and adds them to an existing Chroma vector store.
     """
     # List all PDF files in the specified directory
     pdf_files = [f for f in os.listdir(directory_path) if f.endswith('.pdf')]
-    
+    print(pdf_files)
     documents = []  # Initialize a list to store Document objects
     
     # Initialize the text splitter
@@ -101,28 +101,15 @@ def get_vectorstore_from_pdfs(directory_path='documents'):
         text = ""
         for page in doc:
             text += page.get_text()
-        
+        print(text)
         # Split the PDF text into manageable chunks
         chunks = text_splitter.split_text(text)
         # Convert each chunk into a Document and add to the documents list
         documents.extend([Document(chunk) for chunk in chunks])
-    
+    print(chunks)
     print(f"Processing {len(pdf_files)} PDF files.")
     
-
-
-    # Initialize the text splitter
-    text_splitter = RecursiveCharacterTextSplitter()
-    documents = []
-
-    for pdf_text in text:
-        # Split each PDF text into manageable chunks
-        chunks = text_splitter.split_text(pdf_text)
-        # Convert each chunk into a Document and add to the documents list
-        documents.extend([Document(chunk) for chunk in chunks])
-
-    # Use the existing vector_store to add new embeddings from the PDF documents
-    # Assuming vector_store is already initialized and passed to this function
+   
     attempt = 0
     max_attempts = 5
     success = False
@@ -189,7 +176,7 @@ def get_response(user_input, vector_store, chat_history):
     })
     
     return response['answer']
-
+"""
 if __name__ == "__main__":
     print("Chat with websites")
     hi = 1
@@ -222,3 +209,113 @@ if __name__ == "__main__":
                     chat_history.append(HumanMessage(content=user_query))
                     chat_history.append(AIMessage(content=response))
                     print(f"AI: {response}")
+"""
+
+from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
+import threading
+
+app = app = Flask(__name__, static_folder='front-end-/dist', static_url_path='/')
+CORS(app)
+UPLOAD_FOLDER = 'uploaded_files'
+app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), 'uploaded_files')
+print(app.config['UPLOAD_FOLDER'])
+# Make sure the upload folder exists
+if not os.path.exists(app.config['UPLOAD_FOLDER']):
+    os.makedirs(app.config['UPLOAD_FOLDER'])
+
+# Global variable to store the vector store and chat history state
+vector_store = None
+chat_history = []
+
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
+
+
+@app.route('/start_crawler', methods=['POST'])
+def start_crawler():
+    global vector_store
+    # Assuming you handle the crawler path and output file name within the function
+    json_file_path = start_node_crawler()
+    vector_store = get_vectorstore_from_json(json_file_path)
+    return jsonify({"message": "Crawler started and vector store created."}), 200
+
+@app.route('/send_message', methods=['POST'])
+def send_message():
+    global chat_history, vector_store
+    data = request.json
+    user_input = data.get('message')
+    if not user_input:
+        return jsonify({"error": "No message provided"}), 400
+
+    response = get_response(user_input, vector_store, chat_history)
+    chat_history.append(HumanMessage(content=user_input))
+    chat_history.append(AIMessage(content=response))
+    return jsonify({"message": response}), 200
+
+
+@app.route('/upload_pdf', methods=['POST'])
+def upload_pdf():
+    # This will handle the uploaded file and process it
+    # Make sure to validate the file type and handle any errors
+    if 'file' not in request.files:
+        return jsonify({"error": "No file part"}), 400
+
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({"error": "No selected file"}), 400
+
+    filename = secure_filename(file.filename)
+    
+    # Ensure the UPLOAD_FOLDER exists
+    if not os.path.exists(app.config['UPLOAD_FOLDER']):
+        os.makedirs(app.config['UPLOAD_FOLDER'])
+
+    
+    file_path =os.path.join('uploaded_files', filename)
+    try:
+        file.save(file_path)
+        get_vectorstore_from_pdfs()  # Assuming it processes all files in the directory
+        return jsonify({"message": "File uploaded successfully"}), 200
+    
+    except Exception as e:
+        app.logger.error(f'Failed to save file: {e}')
+        return jsonify({"error": str(e)}), 500
+    # Process the saved file
+
+@app.route('/submit_url', methods=['POST'])
+def submit_url():
+    data = request.json
+    print("Received data:", data)  # Log to console
+    url = data.get('url')
+    if not url:
+        return jsonify({"error": "No URL provided"}), 400
+    
+    # Specify the directory where your Node.js project can access it
+    temp_dir = "gpt-crawler"
+    temp_file_path = os.path.join(temp_dir, 'crawler_url.txt')
+    
+    try:
+        print("try")
+        with open(temp_file_path, 'w') as file:
+            file.write(url)
+        json_file_path = start_node_crawler()
+        get_vectorstore_from_json(json_file_path)
+        # Optionally, start the crawler here or have it check the file independently
+        return jsonify({"message": "URL saved successfully"}), 200
+    except Exception as e:
+        app.logger.error(f'Failed to save URL: {e}')
+        return jsonify({"error": str(e)}), 500
+
+# If you need to provide a way to retrieve chat history
+@app.route('/chat_history', methods=['GET'])
+def get_chat_history():
+    global chat_history
+    # Convert chat history to a serializable format
+    history = [{"content": message.content, "sender": type(message).__name__} for message in chat_history]
+    return jsonify(history), 200
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
+

@@ -11,5 +11,8 @@ list of things to do:
       2.2.1 has to check whether the json file is there otherwise should prompt to do 2.1!
       
 current: completed the todo list and also uploaded the embeddings so that you have something to work with to figure out how it works     
-      
+pdf functionality      
 [alt text](image.png)
+
+query based on web crawled data
+![alt text](image-1.png)
